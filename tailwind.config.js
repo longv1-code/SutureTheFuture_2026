@@ -5,7 +5,21 @@ export default {
     "./src/**/*.{js,jsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'hk-modular': ['HK Modular', 'sans-serif'],
+        'dm-sans': ['DM Sans', 'sans-serif'],
+      },
+      colors: {
+        'primary-cream': '#FFDEC3',
+        'primary-white': '#FFFFFF',
+        'button-main': '#D4A66D',
+        'button-shadow': '#B78140',
+        'button-highlight': '#FAEFD2',
+        'button-highlight-shadow': '#FAEFD2',
+        'button-highlight-main-shadow': '#CF9A59',
+      },
+    },
   },
   plugins: [],
 }

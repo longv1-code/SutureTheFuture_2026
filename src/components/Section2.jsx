@@ -59,7 +59,7 @@ function Section2() {
   return (
     <section id="faq" className="py-20 px-8 bg-white">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl font-bold text-center mb-16 text-gray-900">
+        <h2 className="text-5xl font-hk-modular text-center mb-16 text-primary-cream font-bold">
           FREQUENTLY ASKED QUESTIONS
         </h2>
 
@@ -81,10 +81,10 @@ function Section2() {
 
               {/* Text Container */}
               <div className="p-6 flex-grow flex flex-col justify-between">
-                <h3 className="text-lg font-bold text-gray-900 mb-3">
+                <h3 className="text-lg font-hk-modular text-primary-cream mb-3 font-bold">
                   {faq.title}
                 </h3>
-                <p className="text-gray-700 text-sm leading-relaxed">
+                <p className="text-sm font-dm-sans text-gray-700 font-bold">
                   {faq.text}
                 </p>
               </div>
@@ -93,18 +93,18 @@ function Section2() {
         </div>
 
         {/* Customization Tips */}
-        <div className="mt-12 p-6 bg-yellow-50 border-l-4 border-yellow-400 rounded">
-          <p className="text-sm text-gray-700">
-            <span className="font-semibold">💡 Tip:</span> To adjust individual
-            box heights, modify the <code className="bg-gray-200 px-2 py-1 rounded text-xs">
+        <div className="mt-12 p-6 bg-button-main border-l-4 border-button-shadow rounded">
+          <p className="text-sm font-dm-sans text-black font-bold">
+            <span className="font-hk-modular">💡 Tip:</span> To adjust individual
+            box heights, modify the <code className="bg-gray-300 px-2 py-1 rounded text-xs">
               h-48
             </code>{' '}
             class on the image container (h-40, h-56, etc.) or add{' '}
-            <code className="bg-gray-200 px-2 py-1 rounded text-xs">
+            <code className="bg-gray-300 px-2 py-1 rounded text-xs">
               min-h-[XXXpx]
             </code>{' '}
             to the text container div. You can also use{' '}
-            <code className="bg-gray-200 px-2 py-1 rounded text-xs">
+            <code className="bg-gray-300 px-2 py-1 rounded text-xs">
               lg:col-span-2
             </code>{' '}
             to make specific boxes wider.
