@@ -1,8 +1,14 @@
 import { useEffect } from 'react'
-import ControlPanelImage from '../assets/images/control panel.png'
 import FingerprintScan from '../assets/images/fingerprint-scan.gif'
+import { useTimer } from 'react-timer-hook'
 
 function Section2() {
+  const expiryTimestamp = new Date('2026-04-11T00:00:00')
+  const { seconds, minutes, hours, days } = useTimer({
+    expiryTimestamp,
+    interval: 20,
+  })
+
   useEffect(() => {
     const existingScript = document.querySelector(
       'script[src="https://tenor.com/embed.js"]'
@@ -198,10 +204,36 @@ function Section2() {
         </div>
 
         <div
-          className="-mt-px w-full h-[220px] md:h-[280px] lg:h-[320px] rounded-b-[28px] rounded-t-none border border-[#bba79a] border-t-0 shadow-[0_18px_40px_rgba(0,0,0,0.35)] bg-center bg-no-repeat bg-[length:100%_auto] bg-cover"
-          style={{ backgroundImage: `url(${ControlPanelImage})` }}
-        />
-      </div>
+          className="-mt-px w-full h-[220px] md:h-[280px] lg:h-[320px] rounded-b-[28px] rounded-t-none border border-[#bba79a] border-t-0 shadow-[0_18px_40px_rgba(0,0,0,0.35)] bg-center bg-no-repeat bg-[length:100%_auto] bg-cover flex justify-center items-center"
+        >
+          <div className="rounded-3xl border border-[#b59f91] bg-gradient-to-b from-[#b9a598] via-[#9d887b] to-[#0f0d0c] px-6 py-4 text-primary-cream shadow-[0_18px_40px_rgba(0,0,0,0.35)]">
+            <p className="text-center font-hk-modular text-lg md:text-xl tracking-widest">
+              COUNTDOWN TO APRIL 11, 2026
+            </p>
+            <div className="mt-3 flex items-center justify-center gap-4 text-center font-dm-sans text-sm md:text-base">
+              <div>
+                <div className="text-2xl md:text-3xl font-bold">{days}</div>
+                <div className="uppercase tracking-widest">Days</div>
+              </div>
+              <div className="text-xl md:text-2xl">:</div>
+              <div>
+                <div className="text-2xl md:text-3xl font-bold">{hours}</div>
+                <div className="uppercase tracking-widest">Hours</div>
+              </div>
+              <div className="text-xl md:text-2xl">:</div>
+              <div>
+                <div className="text-2xl md:text-3xl font-bold">{minutes}</div>
+                <div className="uppercase tracking-widest">Minutes</div>
+              </div>
+              <div className="text-xl md:text-2xl">:</div>
+              <div>
+                <div className="text-2xl md:text-3xl font-bold">{seconds}</div>
+                <div className="uppercase tracking-widest">Seconds</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
     </section>
   )
 }
