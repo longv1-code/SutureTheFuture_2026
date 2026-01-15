@@ -1,49 +1,75 @@
+import starrybg from '../assets/images/starrybg.gif'
+
 function Section1() {
   return (
-    <section id="about" className="py-20 px-8 bg-gray-50">
-      <div className="max-w-6xl mx-auto">
+    <section id="about" className="py-20 px-8" style={{ backgroundImage: `url(${starrybg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+      <div className="max-w-6xl mx-auto my-[7rem]">
         {/* Two Column Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-12 mb-12">
           {/* First Column */}
-          <div className="space-y-6">
-            <h2 className="text-4xl font-hk-modular text-primary-cream font-bold">Our Vision</h2>
+          <div className="space-y-6 w-fit">
+            <h2 className="text-4xl font-hk-modular text-primary-cream font-bold">What is Suture the Future?</h2>
             <p className="text-base font-dm-sans text-primary-white leading-relaxed font-bold">
-              We believe in creating innovative solutions that empower businesses to reach their full potential. Our platform combines cutting-edge technology with user-centric design to deliver exceptional results.
+              Suture the Future is a one-day interstellar innovation
+              challenge hosted by the Global Surgery Student Alliance at
+              Texas A&M University, bringing students together to create
+              impactful surgical solutions
+            </p>
+            <p className="text-base font-dm-sans text-primary-white leading-relaxed font-bold">
+              Participants will work in teams and attend hands-on
+              workshops with industry professionals. The event concludes
+              with presentations evaluated by a panel of experts, fostering
+              professional growth and meaningful networking
+              opportunities.
             </p>
           </div>
 
+          {/* Divider (desktop only) */}
+          <div className="hidden md:flex justify-center">
+            <div className="w-px bg-primary-cream/60"></div>
+          </div>
+
           {/* Second Column */}
-          <div className="space-y-6">
-            <h2 className="text-4xl font-hk-modular text-primary-cream font-bold">Why Choose Us</h2>
+          <div className="space-y-6 w-fit">
+            <h2 className="text-4xl font-hk-modular text-primary-cream font-bold">EVENT INFORMATION</h2>
 
             <div className="space-y-6">
               <div>
-                <h3 className="text-xl font-hk-modular text-primary-cream font-bold">Feature One</h3>
+                <u className="text-base font-dm-sans text-primary-white font-bold">
+                  Location
+                </u>
                 <p className="text-base font-dm-sans text-primary-white font-bold">
-                  High-performance solutions tailored to your needs
+                  MSC 2406A
+                </p>
+                <p className="text-base font-dm-sans text-primary-white font-bold">
+                  730 Olsen Blvd, College Station, TX 77845
                 </p>
               </div>
 
               <div>
-                <h3 className="text-xl font-hk-modular text-primary-cream font-bold">Feature Two</h3>
+                <u className="text-base font-dm-sans text-primary-white font-bold">
+                  Parking
+                </u>
                 <p className="text-base font-dm-sans text-primary-white font-bold">
-                  24/7 dedicated customer support and guidance
+                  Free with any valid TAMU permit:
+                </p>
+                <p className="text-base font-dm-sans text-primary-white font-bold">
+                  Lot 100, etc, etc
                 </p>
               </div>
             </div>
 
             <p className="text-base font-dm-sans text-primary-white pt-4 font-bold">
-              Join thousands of satisfied customers worldwide
+              Paid parking at Stallings Blvd Garage or University Center Garage
             </p>
           </div>
         </div>
 
         {/* Note Section */}
-        <div className="bg-button-main border-2 border-button-shadow rounded-lg p-8 text-center">
-          <p className="text-lg font-dm-sans text-black font-bold">
-            <span className="font-hk-modular">Note:</span> Our platform is
-            designed with security and scalability in mind. Start your free
-            trial today and experience the difference.
+        <div className="bg-primary-cream bg-opacity-40 rounded-3xl px-6 py-4 backdrop-blur-sm">
+          <p className="text-s font-dm-sans text-primary-white font-bold text-center [text-shadow:0_2px_6px_rgba(0,0,0,0.4)]">
+            <span className="font-hk-modular">Note:</span> The event is open and free to all participants; however, GSSA members receive priority during the
+            application period. Membership is available through the GSSA website by paying annual or semester dues.
           </p>
         </div>
       </div>
