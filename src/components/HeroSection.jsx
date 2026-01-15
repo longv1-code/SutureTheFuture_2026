@@ -21,19 +21,39 @@ function HeroSection() {
       {/* Dark Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40"></div>
 
-      {/* Text Content */}
-      <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
-        <h1 className="text-6xl font-hk-modular text-primary-cream mb-4 font-bold">Welcome to Our Platform</h1>
-        <p className="text-2xl font-dm-sans text-primary-cream mb-8 font-bold">Transform your vision into reality</p>
-        <button className="bg-button-main text-black px-8 py-3 rounded-lg font-hk-modular font-bold hover:bg-button-highlight transition shadow-lg hover:shadow-xl"
-          style={{
-            boxShadow: '0 4px 0 #B78140',
-          }}
-          onMouseEnter={(e) => e.target.style.boxShadow = '0 2px 0 #CF9A59'}
-          onMouseLeave={(e) => e.target.style.boxShadow = '0 4px 0 #B78140'}
-        >
-          Get Started
-        </button>
+      {/* Text Content - Right Aligned with Fixed Width */}
+      <div className="relative z-10 h-full flex flex-col justify-start items-start pt-32 pl-64">
+        <div className="w-96">
+          {/* Main Title */}
+          <div className="mb-8">
+            <h1 className="text-8xl font-robot-dreamer text-primary-cream font-bold leading-tight">
+              SUTURE
+            </h1>
+            
+            {/* The with lines */}
+            <div className="flex items-center gap-4 my-0">
+              <div className="flex-grow h-0.5 bg-primary-white"></div>
+              <span className="text-3xl font-robot-dreamer text-primary-white font-bold whitespace-nowrap">THE</span>
+              <div className="flex-grow h-0.5 bg-primary-white"></div>
+            </div>
+            
+            <h1 className="text-8xl font-robot-dreamer text-primary-cream font-bold leading-tight">
+              FUTURE
+            </h1>
+          </div>
+
+          {/* Event Details */}
+          <p className="text-lg font-dm-sans text-primary-white mb-6">
+            April 11, 2026 @ Texas A&M University
+          </p>
+
+          {/* Mission Status Box */}
+          <div className="bg-white bg-opacity-10 border border-primary-cream rounded-xl px-6 py-4 backdrop-blur-sm">
+            <p className="text-sm font-dm-sans text-primary-white font-bold">
+              🚀 Mission Status: Accepting GSSA Member Applications
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   )

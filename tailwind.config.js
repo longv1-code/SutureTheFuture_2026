@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'hk-modular': ['HK Modular', 'sans-serif'],
+        'robot-dreamer': ['Robot Dreamer', 'sans-serif'],
         'dm-sans': ['DM Sans', 'sans-serif'],
       },
       colors: {

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
 @font-face {
-  font-family: 'HK Modular';
-  src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+  font-family: 'Robot Dreamer';
+  src: url('/src/assets/fonts/Robot-Dreamer/Robot%20Dreamer.ttf') format('truetype');
 }
 
 @tailwind base;
@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Robot Dreamer', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
