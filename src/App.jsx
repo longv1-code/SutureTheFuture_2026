@@ -1,18 +1,17 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import HeroSection from './components/HeroSection'
-import Section1 from './components/Section1'
-import LaunchSection from './components/LaunchSection'
-import Section2 from './components/Section2'
+import Home from './pages/Home'
+import Team from './pages/Team'
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Navbar />
-      <HeroSection />
-      <Section1 />
-      <LaunchSection />
-      <Section2 />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/team" element={<Team />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
