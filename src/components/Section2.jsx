@@ -1,115 +1,206 @@
+import { useEffect } from 'react'
+import ControlPanelImage from '../assets/control panel.png'
+import FingerprintScan from '../assets/fingerprint-scan.gif'
+
 function Section2() {
+  useEffect(() => {
+    const existingScript = document.querySelector(
+      'script[src="https://tenor.com/embed.js"]'
+    )
+
+    if (!existingScript) {
+      const script = document.createElement('script')
+      script.src = 'https://tenor.com/embed.js'
+      script.async = true
+      document.body.appendChild(script)
+    }
+  }, [])
+
   const faqs = [
     {
-      title: 'Getting Started',
-      text: 'Learn how to set up your account and start using our platform',
-      image:
-        'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=400',
+      title: 'Who can attend?',
+      text: 'Any student 18+ is welcome to apply. No prior experience is required; participants from all majors and backgrounds are encouraged to join if they are excited to collaborate, learn, and innovate. If you are currently under the age of 18, we will not be able to host you at Suture the Future.',
     },
     {
-      title: 'Pricing Plans',
-      text: 'Explore our flexible pricing options suited for all business sizes',
-      image:
-        'https://images.pexels.com/photos/3962286/pexels-photo-3962286.jpeg?auto=compress&cs=tinysrgb&w=400',
+      title: 'How much does it cost?',
+      text: 'Suture the Future is completely free to attend, with meals and swag provided throughout the day. Winning teams will also take home exciting prizes!',
     },
     {
-      title: 'Integration',
-      text: 'Seamlessly integrate with your favorite third-party tools',
-      image:
-        'https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg?auto=compress&cs=tinysrgb&w=400',
+      title: 'When is the deadline to apply for Suture the Future?',
+      text: 'GSSA members have priority registration until February 1st at 11:59 PM. Non-GSSA members may begin applying on February 2nd, and applications will close on April 1st at 11:59 PM. Admissions are rolling and capacity is limited, so early applications are strongly encouraged.',
     },
     {
-      title: 'Security',
-      text: 'Your data is protected with industry-leading encryption standards',
-      image:
-        'https://images.pexels.com/photos/60504/security-lock-password-60504.jpeg?auto=compress&cs=tinysrgb&w=400',
+      title: 'How do teams work?',
+      text: 'Teams must have 5 members. If you already have a full team, all members must submit applications before the deadline, and each team must include at least 1 freshman or sophomore to encourage peer learning. Don’t have a team yet? There will be dedicated time for team formation after the event kickoff.',
     },
     {
-      title: 'Support',
-      text: 'Get help from our expert support team anytime you need',
-      image:
-        'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=400',
+      title: 'How will the presentation work?',
+      text: 'The event will conclude with team presentations showcasing their projects. Each team will have 10 minutes to present, and submissions will be evaluated based on ingenuity, impact, and overall execution.',
     },
     {
-      title: 'Performance',
-      text: 'Optimize your workflow with our powerful analytics dashboard',
-      image:
-        'https://images.pexels.com/photos/3962286/pexels-photo-3962286.jpeg?auto=compress&cs=tinysrgb&w=400',
-    },
-    {
-      title: 'Updates',
-      text: 'Stay informed about new features and platform improvements',
-      image:
-        'https://images.pexels.com/photos/3888151/pexels-photo-3888151.jpeg?auto=compress&cs=tinysrgb&w=400',
-    },
-    {
-      title: 'Training',
-      text: 'Access comprehensive resources and training materials',
-      image:
-        'https://images.pexels.com/photos/60504/security-lock-password-60504.jpeg?auto=compress&cs=tinysrgb&w=400',
-    },
-    {
-      title: 'Community',
-      text: 'Connect with other users and share best practices',
-      image:
-        'https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=400',
+      title: 'Does Suture the Future cover travel?',
+      text: 'At this time, travel expenses are not covered. This policy may be revisited in future semesters depending on participation.',
     },
   ]
 
   return (
-    <section id="faq" className="py-20 px-8 bg-white">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl font-hk-modular text-center mb-16 text-primary-cream font-bold">
-          FREQUENTLY ASKED QUESTIONS
-        </h2>
+    <section id="faq" className="bg-[#0f0d0c] py-20 px-6">
+      <div className="w-full max-w-6xl mx-auto">
+        <div className="flex justify-center mb-10">
+          <div className="px-10 py-3 rounded-full border border-[#b59f91] bg-gradient-to-b from-[#b9a598] via-[#9d887b] to-[#0f0d0c] text-primary-cream text-2xl md:text-3xl font-hk-modular tracking-widest">
+            FREQUENTLY ASKED QUESTIONS
+          </div>
+        </div>
 
-        {/* 3x3 Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="bg-gray-100 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition h-full flex flex-col"
-            >
-              {/* Image Container */}
-              <div className="w-full h-48 overflow-hidden">
-                <img
-                  src={faq.image}
-                  alt={faq.title}
-                  className="w-full h-full object-cover"
-                />
+        <div className="bg-gradient-to-b from-[#b9a598] via-[#9d887b] to-[#0f0d0c] rounded-t-[28px] rounded-b-none p-8 md:p-10 shadow-[0_18px_40px_rgba(0,0,0,0.35)] border border-[#bba79a] border-b-0">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-8">
+            <div className="space-y-6">
+              <div className="rounded-2xl bg-[#a58f81] border border-[#ccb9ad] p-6 shadow-inner">
+                <div className="space-y-6">
+                  {[0, 1, 2].map((row) => (
+                    <div key={row} className="relative">
+                      <div
+                        className="h-3 rounded-full border border-[#c7a77c] bg-[#d4a66d]"
+                        style={{
+                          backgroundImage:
+                            'repeating-linear-gradient(90deg, rgba(255,255,255,0.55) 0 2px, transparent 2px 14px)',
+                        }}
+                      />
+                      <div
+                        className={`absolute -top-2 h-7 w-4 rounded-sm border border-[#f7e8cf] bg-[#f5d9aa] shadow-[0_3px_0_rgba(0,0,0,0.2)] ${
+                          row === 0
+                            ? 'left-10'
+                            : row === 1
+                              ? 'left-32'
+                              : 'left-16'
+                        }`}
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
 
-              {/* Text Container */}
-              <div className="p-6 flex-grow flex flex-col justify-between">
-                <h3 className="text-lg font-hk-modular text-primary-cream mb-3 font-bold">
-                  {faq.title}
+              <div className="rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg">
+                <h3 className="font-hk-modular text-lg text-primary-white mb-3">
+                  {faqs[0].title}
                 </h3>
-                <p className="text-sm font-dm-sans text-gray-700 font-bold">
-                  {faq.text}
+                <p className="font-dm-sans text-sm text-primary-white/90 leading-relaxed">
+                  {faqs[0].text}
                 </p>
               </div>
             </div>
-          ))}
+
+            <div className="space-y-6">
+              <div className="flex items-start gap-6">
+                <div className="flex-1 rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg">
+                  <h3 className="font-hk-modular text-lg text-primary-white mb-3">
+                    {faqs[1].title}
+                  </h3>
+                  <p className="font-dm-sans text-sm text-primary-white/90 leading-relaxed">
+                    {faqs[1].text}
+                  </p>
+                </div>
+
+                <div className="relative w-16 h-40 rounded-full bg-[#caa678] border-2 border-[#a47945] flex items-center justify-center">
+                  <div className="absolute inset-2 rounded-full bg-[#e6c79c]" />
+                  <div className="relative z-10 h-14 w-14 rounded-full bg-[#f7e8cf] border-2 border-[#a47945]" />
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                {[0, 1, 2].map((index) => (
+                  <div
+                    key={index}
+                    className="h-10 w-10 rounded-full bg-[#f1ddc2] border border-[#a47945] flex items-center justify-center"
+                  >
+                    <div
+                      className="h-4 w-0.5 bg-[#a47945]"
+                      style={{
+                        transform:
+                          index === 0
+                            ? 'rotate(-20deg)'
+                            : index === 1
+                              ? 'rotate(15deg)'
+                              : 'rotate(35deg)',
+                      }}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 items-center">
+            <div className="rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg">
+              <h3 className="font-hk-modular text-lg text-primary-white mb-3">
+                {faqs[2].title}
+              </h3>
+              <p className="font-dm-sans text-sm text-primary-white/90 leading-relaxed">
+                {faqs[2].text}
+              </p>
+            </div>
+
+            <div className="w-full">
+              <div
+                className="tenor-gif-embed"
+                data-postid="14610802825093238238"
+                data-share-method="host"
+                data-aspect-ratio="1"
+                data-width="100%"
+              >
+                <a href="https://tenor.com/view/audio-wave-ever1-gif-14610802825093238238">
+                  Audio Wave Ever1 Sticker
+                </a>
+                <a href="https://tenor.com/search/audio+wave+ever1-stickers">
+                  Audio Wave Ever1 Stickers
+                </a>
+              </div>
+            </div>
+
+            <div className="rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg">
+              <h3 className="font-hk-modular text-lg text-primary-white mb-3">
+                {faqs[3].title}
+              </h3>
+              <p className="font-dm-sans text-sm text-primary-white/90 leading-relaxed">
+                {faqs[3].text}
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-[auto_1fr_1fr] gap-6 items-center">
+            <div className="w-24 h-24 rounded-2xl border border-[#e6d3bd] bg-[#6f5f54]/40 flex items-center justify-center">
+              <img
+                src={FingerprintScan}
+                alt="Fingerprint scan"
+                className="w-16 h-16 object-contain"
+              />
+            </div>
+
+            <div className="rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg">
+              <h3 className="font-hk-modular text-lg text-primary-white mb-3">
+                {faqs[4].title}
+              </h3>
+              <p className="font-dm-sans text-sm text-primary-white/90 leading-relaxed">
+                {faqs[4].text}
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg">
+              <h3 className="font-hk-modular text-lg text-primary-white mb-3">
+                {faqs[5].title}
+              </h3>
+              <p className="font-dm-sans text-sm text-primary-white/90 leading-relaxed">
+                {faqs[5].text}
+              </p>
+            </div>
+          </div>
+
         </div>
 
-        {/* Customization Tips */}
-        <div className="mt-12 p-6 bg-button-main border-l-4 border-button-shadow rounded">
-          <p className="text-sm font-dm-sans text-black font-bold">
-            <span className="font-hk-modular">💡 Tip:</span> To adjust individual
-            box heights, modify the <code className="bg-gray-300 px-2 py-1 rounded text-xs">
-              h-48
-            </code>{' '}
-            class on the image container (h-40, h-56, etc.) or add{' '}
-            <code className="bg-gray-300 px-2 py-1 rounded text-xs">
-              min-h-[XXXpx]
-            </code>{' '}
-            to the text container div. You can also use{' '}
-            <code className="bg-gray-300 px-2 py-1 rounded text-xs">
-              lg:col-span-2
-            </code>{' '}
-            to make specific boxes wider.
-          </p>
-        </div>
+        <div
+          className="-mt-px w-full h-[220px] md:h-[280px] lg:h-[320px] rounded-b-[28px] rounded-t-none border border-[#bba79a] border-t-0 shadow-[0_18px_40px_rgba(0,0,0,0.35)] bg-center bg-no-repeat bg-[length:100%_auto] bg-cover"
+          style={{ backgroundImage: `url(${ControlPanelImage})` }}
+        />
       </div>
     </section>
   )
