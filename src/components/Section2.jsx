@@ -1,5 +1,5 @@
-import { useEffect } from 'react'
 import FingerprintScan from '../assets/images/fingerprint-scan.gif'
+import AudioWaveGif from '../assets/images/audio-wave-ever1.gif'
 import { useTimer } from 'react-timer-hook'
 
 function Section2() {
@@ -8,19 +8,6 @@ function Section2() {
     expiryTimestamp,
     interval: 20,
   })
-
-  useEffect(() => {
-    const existingScript = document.querySelector(
-      'script[src="https://tenor.com/embed.js"]'
-    )
-
-    if (!existingScript) {
-      const script = document.createElement('script')
-      script.src = 'https://tenor.com/embed.js'
-      script.async = true
-      document.body.appendChild(script)
-    }
-  }, [])
 
   const faqs = [
     {
@@ -146,20 +133,13 @@ function Section2() {
               </p>
             </div>
 
-            <div className="w-full">
-              <div
-                className="tenor-gif-embed"
-                data-postid="14610802825093238238"
-                data-share-method="host"
-                data-aspect-ratio="1"
-                data-width="100%"
-              >
-                <a href="https://tenor.com/view/audio-wave-ever1-gif-14610802825093238238">
-                  Audio Wave Ever1 Sticker
-                </a>
-                <a href="https://tenor.com/search/audio+wave+ever1-stickers">
-                  Audio Wave Ever1 Stickers
-                </a>
+            <div className="flex items-center justify-center">
+              <div className="w-full max-w-[220px] rounded-2xl">
+                <img
+                  src={AudioWaveGif}
+                  alt="Audio wave"
+                  className="w-full h-auto"
+                />
               </div>
             </div>
 
@@ -190,7 +170,7 @@ function Section2() {
                 {faqs[4].text}
               </p>
             </div>
-
+                
             <div className="rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg">
               <h3 className="font-hk-modular text-lg text-primary-white mb-3">
                 {faqs[5].title}
