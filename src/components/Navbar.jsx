@@ -8,9 +8,9 @@ function Navbar() {
           <li>
             <Link to="/" className="hover:text-primary-cream transition font-dm-sans text-sm font-bold">suture the future</Link>
           </li>
-          <li>
+          {/*<li>
             <Link to="/team" className="hover:text-primary-cream transition font-dm-sans text-sm font-bold">meet the team</Link>
-          </li>
+          </li>*/}
         </ul>
       </div>
     </nav>

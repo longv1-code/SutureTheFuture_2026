@@ -18,6 +18,7 @@ export default {
         'button-highlight': '#FAEFD2',
         'button-highlight-shadow': '#FAEFD2',
         'button-highlight-main-shadow': '#CF9A59',
+        'outer-space' : '#252525',
       },
     },
   },

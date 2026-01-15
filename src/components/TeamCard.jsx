@@ -1,6 +1,6 @@
 function TeamCard({ name, role, image }) {
   return (
-    <div className="flex flex-col items-center text-center">
+    <div className="flex flex-col items-center text-center fade-in">
       <img
         src={image}
         alt={name}

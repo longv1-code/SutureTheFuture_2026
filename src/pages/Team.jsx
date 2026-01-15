@@ -3,7 +3,7 @@ import TeamCard from '../components/TeamCard'
 
 function Team() {
   return (
-    <section className="pt-32 px-8">
+    <section className="font-dm-sans pt-32 px-8">
       <h1 className="text-3xl font-bold text-center mb-12">
         Meet the Team
       </h1>

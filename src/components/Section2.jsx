@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
-import ControlPanelImage from '../assets/control panel.png'
-import FingerprintScan from '../assets/fingerprint-scan.gif'
+import ControlPanelImage from '../assets/images/control panel.png'
+import FingerprintScan from '../assets/images/fingerprint-scan.gif'
 
 function Section2() {
   useEffect(() => {

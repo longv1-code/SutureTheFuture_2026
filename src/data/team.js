@@ -7,19 +7,19 @@ const team = [
   {
     id: 1,
     name: 'Long Vo',
-    role: 'Software Developer',
+    role: 'Software Engineer',
     image: long
   },
   {
     id: 2,
     name: 'Kevin Chen',
-    role: 'Software Developer',
+    role: 'Software Engineer',
     image: kevin
   },
   {
     id: 3,
     name: 'Ka Yan',
-    role: 'Design Lead',
+    role: 'UI/UX Designer',
     image: kayan
   }
 ]
