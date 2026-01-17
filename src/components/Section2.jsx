@@ -39,7 +39,7 @@ function Section2() {
         <div className="flex justify-center mb-10 ">
           <div
             className="w-full px-10 py-3 rounded-full border border-[#b59f91] text-primary-cream text-2xl md:text-3xl font-hk-modular tracking-widest text-center"
-            style={{ backgroundImage: 'linear-gradient(to bottom, #b9a598, #9d887b, #000000)' }}
+            style={{ backgroundImage: 'linear-gradient(to bottom, #b9a598, #9d887b, #0f0d0c)' }}
           >
             FREQUENTLY ASKED QUESTIONS
           </div>
@@ -50,7 +50,7 @@ function Section2() {
 
         <div
           className="rounded-[28px] p-8 md:p-10 shadow-[0_18px_40px_rgba(0,0,0,0.35)] border border-[#bba79a] border-b-0"
-          style={{ backgroundImage: 'linear-gradient(to bottom, #b9a598, #000000)' }}
+          style={{ backgroundImage: 'linear-gradient(to bottom, #b9a598, #0f0d0c)' }}
         >
           <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-8">
             <div className="flex flex-col md:flex-row items-start md:items-stretch gap-8">
@@ -74,7 +74,10 @@ function Section2() {
                 </div>
               </div>
 
-              <div className="flex-1 rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg overflow-hidden">
+              <div
+                className="flex-1 rounded-2xl border border-[#dccbc0] p-6 shadow-lg overflow-hidden"
+                style={{ backgroundImage: 'linear-gradient(to top, #b9a598, #0f0d0c)' }}
+              >
                 <h3 className="font-dm-sans text-lg text-primary-white mb-3">
                   {faqs[0].title}
                 </h3>
@@ -90,7 +93,10 @@ function Section2() {
                   <div className="absolute inset-2 rounded-full bg-[#e6c79c]" />
                   <div className="relative z-10 h-14 w-14 rounded-full bg-[#f7e8cf] border-2 border-[#a47945]" />
                 </div>
-                <div className="flex-1 rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg">
+                <div
+                  className="flex-1 rounded-2xl border border-[#dccbc0] p-6 shadow-lg"
+                  style={{ backgroundImage: 'linear-gradient(to top, #b9a598, #0f0d0c)' }}
+                >
                   <h3 className="font-dm-sans text-lg text-primary-white mb-3">
                     {faqs[1].title}
                   </h3>
@@ -145,7 +151,10 @@ function Section2() {
           </div>
 
           <div className="mt-8 grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 items-center">
-            <div className="rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg">
+            <div
+              className="rounded-2xl border border-[#dccbc0] p-6 shadow-lg"
+              style={{ backgroundImage: 'linear-gradient(to top, #b9a598, #0f0d0c)' }}
+            >
               <h3 className="font-dm-sans text-lg text-primary-white mb-3">
                 {faqs[2].title}
               </h3>
@@ -171,7 +180,10 @@ function Section2() {
               </div>
             </div>
 
-            <div className="rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg">
+            <div
+              className="rounded-2xl border border-[#dccbc0] p-6 shadow-lg"
+              style={{ backgroundImage: 'linear-gradient(to top, #b9a598, #0f0d0c)' }}
+            >
               <h3 className="font-dm-sans text-lg text-primary-white mb-3">
                 {faqs[3].title}
               </h3>
@@ -190,7 +202,10 @@ function Section2() {
               />
             </div>
 
-            <div className="rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg">
+            <div
+              className="rounded-2xl border border-[#dccbc0] p-6 shadow-lg"
+              style={{ backgroundImage: 'linear-gradient(to top, #b9a598, #0f0d0c)' }}
+            >
               <h3 className="font-dm-sans text-lg text-primary-white mb-3">
                 {faqs[4].title}
               </h3>
@@ -199,7 +214,10 @@ function Section2() {
               </p>
             </div>
                 
-            <div className="rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg">
+            <div
+              className="rounded-2xl border border-[#dccbc0] p-6 shadow-lg"
+              style={{ backgroundImage: 'linear-gradient(to top, #b9a598, #0f0d0c)' }}
+            >
               <h3 className="font-dm-sans text-lg text-primary-white mb-3">
                 {faqs[5].title}
               </h3>
