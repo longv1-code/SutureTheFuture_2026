@@ -194,12 +194,8 @@ function Section2() {
           </div>
 
           <div className="mt-8 grid grid-cols-1 md:grid-cols-[auto_1fr_1fr] gap-6 items-center">
-            <div className="w-24 h-24 rounded-2xl border border-[#e6d3bd] bg-[#6f5f54]/40 flex items-center justify-center">
-              <img
-                src={FingerprintScan}
-                alt="Fingerprint scan"
-                className="w-16 h-16 object-contain"
-              />
+            <div className="w-24 h-24 rounded-2xl  flex items-center justify-center">
+              
             </div>
 
             <div
