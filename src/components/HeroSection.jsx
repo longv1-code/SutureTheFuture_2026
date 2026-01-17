@@ -43,7 +43,7 @@ function HeroSection() {
           {/* Main Title */}
           <div className="w-full flex justify-center mb-8">
             <div className="text-center inline-block">
-              <h1 className="text-8xl font-robot-dreamer text-primary-cream font-bold leading-none">
+              <h1 className="pl-5 text-8xl font-robot-dreamer text-primary-cream font-bold leading-none">
                 SUTURE
               </h1>
               
@@ -54,7 +54,7 @@ function HeroSection() {
                 <div className="flex-grow h-0.5 bg-primary-white"></div>
               </div>
               
-              <h1 ref={titleRef} className="text-8xl font-robot-dreamer text-primary-cream font-bold leading-none">
+              <h1 ref={titleRef} className="pl-5 text-8xl font-robot-dreamer text-primary-cream font-bold leading-none">
                 FUTURE
               </h1>
             </div>
