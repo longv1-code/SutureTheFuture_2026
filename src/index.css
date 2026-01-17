@@ -23,12 +23,19 @@ body {
   font-family: 'Robot Dreamer', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  background-color: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 #HeroVideo {
   transform: scaleX(-1) scale(1.7) rotate(10deg) translateX(10px) translateY(-60px);
+}
+
+@media (max-width: 768px) {
+  #HeroVideo {
+    transform: scaleX(-1) scale(1.2) rotate(0deg) translateX(0) translateY(0);
+  }
 }
 
 .fade-in {
