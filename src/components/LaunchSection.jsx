@@ -163,7 +163,7 @@ function LaunchSection() {
                         Free with any valid TAMU permit:
                       </p>
                       <p className="text-sm md:text-base font-dm-sans text-primary-white font-bold">
-                        Lot 100, etc, etc
+                        Lot 100, Lot 42, and Lot 20
                       </p>
                     </div>
                   </div>
