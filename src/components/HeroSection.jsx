@@ -18,10 +18,10 @@ function HeroSection() {
   }, [])
 
   return (
-    <div id="home" className="relative w-full h-screen mt-8 overflow-hidden">
+    <div id="home" className="relative w-full h-[110vh] mt-8 overflow-hidden">
       {/* Video Background */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="absolute top-0 left-0 w-full h-full object-fill"
         id="HeroVideo"
         autoPlay
         muted
