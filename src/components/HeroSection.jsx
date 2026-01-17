@@ -21,16 +21,16 @@ function HeroSection() {
     <div id="home" className="relative w-full min-h-screen md:h-[110vh] mt-0 md:mt-8 overflow-hidden bg-black">
       {/* Video Background */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover md:object-fill"
+        className="absolute top-0 left-0 w-full h-full object-cover md:object-fill pointer-events-none select-none"
         id="HeroVideo"
         autoPlay
         muted
         loop
+        playsInline
+        aria-hidden="true"
+        tabIndex={-1}
       >
-        <source
-          src={HeroVideo}
-          type="video/mp4"
-        />
+        <source src={HeroVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 

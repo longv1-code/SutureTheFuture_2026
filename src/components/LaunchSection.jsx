@@ -84,7 +84,7 @@ function LaunchSection() {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <div className="sticky top-0 h-screen w-full overflow-hidden">
+      <div className="sticky top-0 min-h-[100svh] w-full overflow-hidden">
         <div className="absolute inset-0">
           <Rocket
             className="absolute left-[8%] sm:left-[12%] md:left-[16%] bottom-[-50px] sm:bottom-[-60px] md:bottom-[-70px] h-[120px] sm:h-[150px] md:h-[180px] w-[60px] sm:w-[75px] md:w-[90px]"

@@ -8,7 +8,7 @@ function Section1() {
         <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-12 mb-12">
           {/* First Column */}
           <div className="space-y-6 w-fit">
-            <h2 className="text-4xl font-hk-modular text-primary-cream font-bold">What is Suture the Future?</h2>
+            <h2 className="text-4xl font-dm-sans text-primary-cream font-bold">What is Suture the Future?</h2>
             <p className="text-base font-dm-sans text-primary-white leading-relaxed font-bold">
               Suture the Future is a one-day interstellar innovation
               challenge hosted by the Global Surgery Student Alliance at
@@ -31,7 +31,7 @@ function Section1() {
 
           {/* Second Column */}
           <div className="space-y-6 w-fit">
-            <h2 className="text-4xl font-hk-modular text-primary-cream font-bold">EVENT INFORMATION</h2>
+            <h2 className="text-4xl font-dm-sans text-primary-cream font-bold">EVENT INFORMATION</h2>
 
             <div className="space-y-6">
               <div>
@@ -68,7 +68,7 @@ function Section1() {
         {/* Note Section */}
         <div className="bg-primary-cream bg-opacity-40 rounded-3xl px-6 py-4 backdrop-blur-sm">
           <p className="text-s font-dm-sans text-primary-white font-bold text-center [text-shadow:0_2px_6px_rgba(0,0,0,0.4)]">
-            <span className="font-hk-modular">Note:</span> The event is open and free to all participants; however, GSSA members receive priority during the
+            <span className="font-dm-sans">Note:</span> The event is open and free to all participants; however, GSSA members receive priority during the
             application period. Membership is available through the GSSA website by paying annual or semester dues.
           </p>
         </div>
