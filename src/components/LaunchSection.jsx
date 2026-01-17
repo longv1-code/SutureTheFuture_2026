@@ -146,10 +146,10 @@ function LaunchSection() {
                         Location
                       </u>
                       <p className="text-sm md:text-base font-dm-sans text-primary-white font-bold">
-                        MSC / ILCB*
+                        ILCB*
                       </p>
                       <p className="text-sm md:text-base font-dm-sans text-primary-white font-bold">
-                        *TBD based on number of participants
+                        *Room TBD based on number of participants
                       </p>
                     </div>
 
