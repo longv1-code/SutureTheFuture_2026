@@ -34,11 +34,11 @@ function Section2() {
   ]
 
   return (
-    <section id="faq" className="bg-[#0f0d0c] py-20 px-6">
+    <section id="faq" className="bg-[#0f0d0c] py-16 sm:py-20 px-4 sm:px-6">
       <div className="w-full max-w-6xl mx-auto">
         <div className="flex justify-center mb-10 ">
           <div
-            className="w-full px-10 py-3 rounded-full border border-[#b59f91] text-primary-cream text-2xl md:text-3xl font-hk-modular tracking-widest text-center"
+            className="w-full px-4 sm:px-10 py-3 rounded-full border border-[#b59f91] text-primary-cream text-lg sm:text-2xl md:text-3xl font-hk-modular tracking-widest text-center"
             style={{ backgroundImage: 'linear-gradient(to bottom, #b9a598, #9d887b, #0f0d0c)' }}
           >
             FREQUENTLY ASKED QUESTIONS
@@ -49,17 +49,17 @@ function Section2() {
         </div>
 
         <div
-          className="rounded-[28px] p-8 md:p-10 shadow-[0_18px_40px_rgba(0,0,0,0.35)] border border-[#bba79a] border-b-0"
+          className="rounded-[28px] p-5 sm:p-8 md:p-10 shadow-[0_18px_40px_rgba(0,0,0,0.35)] border border-[#bba79a] border-b-0"
           style={{ backgroundImage: 'linear-gradient(to bottom, #b9a598, #0f0d0c)' }}
         >
           <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-8">
             <div className="flex flex-col md:flex-row items-start md:items-stretch gap-8">
-              <div className="md:w-5/12 lg:max-w-[360px] flex">
-                <div className="flex-1 flex flex-col justify-between space-y-6">
+              <div className="w-full md:w-5/12 lg:max-w-[360px] flex">
+                <div className="w-full flex flex-col justify-between space-y-6">
                   {[0, 1, 2, 3, 4].map((row) => (
                     <div key={row} className="relative">
                       <div
-                        className="h-3 rounded-full border border-[#c7a77c] bg-[#d4a66d]"
+                        className="h-3 w-full rounded-full border border-[#c7a77c] bg-[#d4a66d]"
                         style={{
                           backgroundImage:
                             'repeating-linear-gradient(90deg, rgba(255,255,255,0.55) 0 2px, transparent 2px 14px)',
@@ -75,7 +75,7 @@ function Section2() {
               </div>
 
               <div
-                className="flex-1 rounded-2xl border border-[#dccbc0] p-6 shadow-lg overflow-hidden"
+                className="flex-1 rounded-2xl border border-[#dccbc0] p-5 sm:p-6 shadow-lg overflow-hidden"
                 style={{ backgroundImage: 'linear-gradient(to top, #b9a598, #0f0d0c)' }}
               >
                 <h3 className="font-dm-sans text-lg text-primary-white mb-3">
@@ -88,13 +88,13 @@ function Section2() {
             </div>
 
             <div className="space-y-6">
-              <div className="flex items-start gap-6">
-                <div className="relative w-16 h-40 rounded-full bg-[#caa678] border-2 border-[#a47945] flex items-center justify-center">
+              <div className="flex items-start gap-4 sm:gap-6">
+                <div className="relative w-12 sm:w-16 h-32 sm:h-40 rounded-full bg-[#caa678] border-2 border-[#a47945] flex items-center justify-center">
                   <div className="absolute inset-2 rounded-full bg-[#e6c79c]" />
-                  <div className="relative z-10 h-14 w-14 rounded-full bg-[#f7e8cf] border-2 border-[#a47945]" />
+                  <div className="relative z-10 h-10 w-10 sm:h-14 sm:w-14 rounded-full bg-[#f7e8cf] border-2 border-[#a47945]" />
                 </div>
                 <div
-                  className="flex-1 rounded-2xl border border-[#dccbc0] p-6 shadow-lg"
+                  className="flex-1 rounded-2xl border border-[#dccbc0] p-5 sm:p-6 shadow-lg"
                   style={{ backgroundImage: 'linear-gradient(to top, #b9a598, #0f0d0c)' }}
                 >
                   <h3 className="font-dm-sans text-lg text-primary-white mb-3">
@@ -107,14 +107,14 @@ function Section2() {
 
               </div>
 
-              <div className="flex justify-evenly items-center gap-4">
+              <div className="flex flex-wrap justify-evenly items-center gap-3 sm:gap-4">
                 {[0, 1, 2, 3].map((index) => (
                   <div
                     key={index}
-                    className="h-10 w-10 rounded-full bg-[#f1ddc2] border border-[#a47945] flex items-center justify-center"
+                    className="h-8 w-8 sm:h-10 sm:w-10 rounded-full bg-[#f1ddc2] border border-[#a47945] flex items-center justify-center"
                   >
                     <div
-                      className="h-4 w-0.5 bg-[#a47945]"
+                      className="h-3 sm:h-4 w-0.5 bg-[#a47945]"
                       style={{
                         transform:
                           index === 0
@@ -127,14 +127,14 @@ function Section2() {
                   </div>
                 ))}
               </div>
-              <div className="flex justify-between items-center gap-4">
+              <div className="flex flex-wrap justify-between items-center gap-3 sm:gap-4">
                 {[0, 1, 2,3,4,5].map((index) => (
                   <div
                     key={index}
-                    className="h-10 w-10 rounded-full bg-[#f1ddc2] border border-[#a47945] flex items-center justify-center"
+                    className="h-8 w-8 sm:h-10 sm:w-10 rounded-full bg-[#f1ddc2] border border-[#a47945] flex items-center justify-center"
                   >
                     <div
-                      className="h-4 w-0.5 bg-[#a47945] "
+                      className="h-3 sm:h-4 w-0.5 bg-[#a47945] "
                       style={{
                         transform:
                           index === 0
@@ -152,7 +152,7 @@ function Section2() {
 
           <div className="mt-8 grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 items-center">
             <div
-              className="rounded-2xl border border-[#dccbc0] p-6 shadow-lg"
+              className="rounded-2xl border border-[#dccbc0] p-5 sm:p-6 shadow-lg"
               style={{ backgroundImage: 'linear-gradient(to top, #b9a598, #0f0d0c)' }}
             >
               <h3 className="font-dm-sans text-lg text-primary-white mb-3">
@@ -164,14 +164,14 @@ function Section2() {
             </div>
 
             <div className="flex flex-col items-center justify-center">
-              <div className="w-full max-w-[220px] -mb-16 rounded-2xl">
+              <div className="w-full max-w-[200px] sm:max-w-[220px] -mb-10 sm:-mb-16 rounded-2xl">
                 <img
                   src={AudioWaveGif}
                   alt="Audio wave"
                   className="w-full h-auto"
                 />
               </div>
-              <div className="w-full max-w-[220px] -mt-10 rotate-180 rounded-2xl">
+              <div className="w-full max-w-[200px] sm:max-w-[220px] -mt-6 sm:-mt-10 rotate-180 rounded-2xl">
                 <img
                   src={AudioWaveGif}
                   alt="Audio wave"
@@ -181,7 +181,7 @@ function Section2() {
             </div>
 
             <div
-              className="rounded-2xl border border-[#dccbc0] p-6 shadow-lg"
+              className="rounded-2xl border border-[#dccbc0] p-5 sm:p-6 shadow-lg"
               style={{ backgroundImage: 'linear-gradient(to top, #b9a598, #0f0d0c)' }}
             >
               <h3 className="font-dm-sans text-lg text-primary-white mb-3">
@@ -194,12 +194,12 @@ function Section2() {
           </div>
 
           <div className="mt-8 grid grid-cols-1 md:grid-cols-[auto_1fr_1fr] gap-6 items-center">
-            <div className="w-24 h-24 rounded-2xl  flex items-center justify-center">
+            <div className="w-16 sm:w-24 h-16 sm:h-24 rounded-2xl  flex items-center justify-center">
               
             </div>
 
             <div
-              className="rounded-2xl border border-[#dccbc0] p-6 shadow-lg"
+              className="rounded-2xl border border-[#dccbc0] p-5 sm:p-6 shadow-lg"
               style={{ backgroundImage: 'linear-gradient(to top, #b9a598, #0f0d0c)' }}
             >
               <h3 className="font-dm-sans text-lg text-primary-white mb-3">
@@ -211,7 +211,7 @@ function Section2() {
             </div>
                 
             <div
-              className="rounded-2xl border border-[#dccbc0] p-6 shadow-lg"
+              className="rounded-2xl border border-[#dccbc0] p-5 sm:p-6 shadow-lg"
               style={{ backgroundImage: 'linear-gradient(to top, #b9a598, #0f0d0c)' }}
             >
               <h3 className="font-dm-sans text-lg text-primary-white mb-3">

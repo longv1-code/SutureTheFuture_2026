@@ -76,7 +76,7 @@ function LaunchSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full min-h-[280vh] bg-[#0f0d0c]"
+      className="relative w-full min-h-[240vh] sm:min-h-[260vh] md:min-h-[280vh] bg-[#0f0d0c]"
       style={{
         backgroundImage: `url(${launchBackground})`,
         backgroundSize: '100% 100%',
@@ -84,26 +84,24 @@ function LaunchSection() {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <div
-        className="sticky top-0 h-screen w-full overflow-hidden"
-      >
+      <div className="sticky top-0 h-screen w-full overflow-hidden">
         <div className="absolute inset-0">
           <Rocket
-            className="absolute left-[16%] bottom-[-70px] h-[180px] w-[90px]"
+            className="absolute left-[8%] sm:left-[12%] md:left-[16%] bottom-[-50px] sm:bottom-[-60px] md:bottom-[-70px] h-[120px] sm:h-[150px] md:h-[180px] w-[60px] sm:w-[75px] md:w-[90px]"
             style={{
               transform: rocketLift(480),
               opacity: rocketFade(0.65),
             }}
           />
           <Rocket
-            className="absolute left-1/2 bottom-[-90px] h-[250px] w-[120px]"
+            className="absolute left-1/2 bottom-[-70px] sm:bottom-[-80px] md:bottom-[-90px] h-[170px] sm:h-[210px] md:h-[250px] w-[82px] sm:w-[100px] md:w-[120px]"
             style={{
               transform: `translateX(-50%) ${rocketLift(640)}`,
               opacity: rocketFade(0.6),
             }}
           />
           <Rocket
-            className="absolute right-[16%] bottom-[-60px] h-[170px] w-[85px]"
+            className="absolute right-[8%] sm:right-[12%] md:right-[16%] bottom-[-45px] sm:bottom-[-55px] md:bottom-[-60px] h-[115px] sm:h-[140px] md:h-[170px] w-[58px] sm:w-[70px] md:w-[85px]"
             style={{
               transform: rocketLift(440),
               opacity: rocketFade(0.7),
@@ -111,9 +109,9 @@ function LaunchSection() {
           />
         </div>
 
-        <div className="relative z-10 h-full flex items-start justify-center px-6">
-          <div className="w-full max-w-6xl mx-auto mt-[14vh]">
-            <div className="bg-black/30 backdrop-blur-[1px] rounded-3xl px-8 py-10 border border-white/20">
+        <div className="relative z-10 h-full flex items-start justify-center px-4 sm:px-6">
+          <div className="w-full max-w-6xl mx-auto lg:mt-[24vh] sm:mt-[5vh] ">
+            <div className="bg-black/30 backdrop-blur-[1px] rounded-3xl px-5 sm:px-8 py-8 sm:py-10 border border-white/20">
               <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-12">
                 <div className="space-y-6">
                   <h2 className="text-3xl md:text-4xl font-hk-modular text-primary-cream font-bold">
