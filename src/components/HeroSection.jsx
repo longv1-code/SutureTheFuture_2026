@@ -1,9 +1,15 @@
 import HeroVideo from '../assets/videos/HeroVideo.mp4'
 import { useRef, useEffect, useState } from 'react'
+import { useTimer } from 'react-timer-hook'
 
 function HeroSection() {
   const [titleWidth, setTitleWidth] = useState(0)
   const titleRef = useRef()
+  const expiryTimestamp = new Date('2026-04-11T00:00:00')
+  const { seconds, minutes, hours, days } = useTimer({
+    expiryTimestamp,
+    interval: 20,
+  })
 
   useEffect(() => {
     if (titleRef.current) {
@@ -62,8 +68,34 @@ function HeroSection() {
           {/* Mission Status Box */}
           <div className="bg-primary-cream bg-opacity-40 rounded-3xl px-6 py-4 backdrop-blur-sm">
             <p className="text-s font-dm-sans text-primary-white font-bold text-center [text-shadow:0_2px_6px_rgba(0,0,0,0.4)]">
-              🚀 Mission Status: GSSA Member Applications Open January 20
+              Mission Status: GSSA Member Applications Open January 20
             </p>
+          </div>
+          <div className="rounded-3xl mt-10 border border-[#b59f91] bg-gradient-to-b from-[#b9a598] via-[#9d887b] to-[#0f0d0c] px-6 py-4 text-primary-cream shadow-[0_18px_40px_rgba(0,0,0,0.35)]">
+            <p className="text-center font-hk-modular text-lg md:text-xl tracking-widest">
+              COUNTDOWN TO APRIL 11, 2026
+            </p>
+            <div className="mt-3 flex items-center justify-center gap-4 text-center font-dm-sans text-sm md:text-base">
+              <div>
+                <div className="text-2xl md:text-3xl font-bold">{days}</div>
+                <div className="uppercase tracking-widest">Days</div>
+              </div>
+              <div className="text-xl md:text-2xl">:</div>
+              <div>
+                <div className="text-2xl md:text-3xl font-bold">{hours}</div>
+                <div className="uppercase tracking-widest">Hours</div>
+              </div>
+              <div className="text-xl md:text-2xl">:</div>
+              <div>
+                <div className="text-2xl md:text-3xl font-bold">{minutes}</div>
+                <div className="uppercase tracking-widest">Minutes</div>
+              </div>
+              <div className="text-xl md:text-2xl">:</div>
+              <div>
+                <div className="text-2xl md:text-3xl font-bold">{seconds}</div>
+                <div className="uppercase tracking-widest">Seconds</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -1,13 +1,8 @@
 import FingerprintScan from '../assets/images/fingerprint-scan.gif'
 import AudioWaveGif from '../assets/images/audio-wave-ever1.gif'
-import { useTimer } from 'react-timer-hook'
 
 function Section2() {
-  const expiryTimestamp = new Date('2026-04-11T00:00:00')
-  const { seconds, minutes, hours, days } = useTimer({
-    expiryTimestamp,
-    interval: 20,
-  })
+
 
   const sliderPositions = ['12%', '62%', '28%', '44%', '20%']
 
@@ -41,13 +36,22 @@ function Section2() {
   return (
     <section id="faq" className="bg-[#0f0d0c] py-20 px-6">
       <div className="w-full max-w-6xl mx-auto">
-        <div className="flex justify-center mb-10">
-          <div className="px-10 py-3 rounded-full border border-[#b59f91] bg-gradient-to-b from-[#b9a598] via-[#9d887b] to-[#0f0d0c] text-primary-cream text-2xl md:text-3xl font-dm-sans\ tracking-widest">
+        <div className="flex justify-center mb-10 ">
+          <div
+            className="w-full px-10 py-3 rounded-full border border-[#b59f91] text-primary-cream text-2xl md:text-3xl font-hk-modular tracking-widest text-center"
+            style={{ backgroundImage: 'linear-gradient(to bottom, #b9a598, #9d887b, #000000)' }}
+          >
             FREQUENTLY ASKED QUESTIONS
           </div>
+          {/* <div className="w-full px-10 py-3 rounded-full border border-[#b59f91] bg-gradient-to-r from-[#b9a598] via-[#9d887b] to-[#0f0d0c] text-primary-cream text-2xl md:text-3xl font-hk-modular tracking-widest text-center">
+            FREQUENTLY ASKED QUESTIONS
+          </div> */}
         </div>
 
-        <div className="bg-gradient-to-b from-[#b9a598] via-[#9d887b] to-[#0f0d0c] rounded-t-[28px] rounded-b-none p-8 md:p-10 shadow-[0_18px_40px_rgba(0,0,0,0.35)] border border-[#bba79a] border-b-0">
+        <div
+          className="rounded-[28px] p-8 md:p-10 shadow-[0_18px_40px_rgba(0,0,0,0.35)] border border-[#bba79a] border-b-0"
+          style={{ backgroundImage: 'linear-gradient(to bottom, #b9a598, #000000)' }}
+        >
           <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-8">
             <div className="flex flex-col md:flex-row items-start md:items-stretch gap-8">
               <div className="md:w-5/12 lg:max-w-[360px] flex">
@@ -150,8 +154,15 @@ function Section2() {
               </p>
             </div>
 
-            <div className="flex items-center justify-center">
-              <div className="w-full max-w-[220px] rounded-2xl">
+            <div className="flex flex-col items-center justify-center">
+              <div className="w-full max-w-[220px] -mb-16 rounded-2xl">
+                <img
+                  src={AudioWaveGif}
+                  alt="Audio wave"
+                  className="w-full h-auto"
+                />
+              </div>
+              <div className="w-full max-w-[220px] -mt-10 rotate-180 rounded-2xl">
                 <img
                   src={AudioWaveGif}
                   alt="Audio wave"
@@ -200,36 +211,6 @@ function Section2() {
 
         </div>
 
-        <div
-          className="-mt-px w-full h-[220px] md:h-[280px] lg:h-[320px] rounded-b-[28px] rounded-t-none border border-[#bba79a] border-t-0 shadow-[0_18px_40px_rgba(0,0,0,0.35)] bg-center bg-no-repeat bg-[length:100%_auto] bg-cover flex justify-center items-center"
-        >
-          <div className="rounded-3xl border border-[#b59f91] bg-gradient-to-b from-[#b9a598] via-[#9d887b] to-[#0f0d0c] px-6 py-4 text-primary-cream shadow-[0_18px_40px_rgba(0,0,0,0.35)]">
-            <p className="text-center font-dm-sans text-lg md:text-xl tracking-widest">
-              COUNTDOWN TO APRIL 11, 2026
-            </p>
-            <div className="mt-3 flex items-center justify-center gap-4 text-center font-dm-sans text-sm md:text-base">
-              <div>
-                <div className="text-2xl md:text-3xl font-bold">{days}</div>
-                <div className="uppercase tracking-widest">Days</div>
-              </div>
-              <div className="text-xl md:text-2xl">:</div>
-              <div>
-                <div className="text-2xl md:text-3xl font-bold">{hours}</div>
-                <div className="uppercase tracking-widest">Hours</div>
-              </div>
-              <div className="text-xl md:text-2xl">:</div>
-              <div>
-                <div className="text-2xl md:text-3xl font-bold">{minutes}</div>
-                <div className="uppercase tracking-widest">Minutes</div>
-              </div>
-              <div className="text-xl md:text-2xl">:</div>
-              <div>
-                <div className="text-2xl md:text-3xl font-bold">{seconds}</div>
-                <div className="uppercase tracking-widest">Seconds</div>
-              </div>
-            </div>
-          </div>
-        </div>
         </div>
     </section>
   )
