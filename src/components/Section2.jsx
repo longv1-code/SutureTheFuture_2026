@@ -42,7 +42,7 @@ function Section2() {
     <section id="faq" className="bg-[#0f0d0c] py-20 px-6">
       <div className="w-full max-w-6xl mx-auto">
         <div className="flex justify-center mb-10">
-          <div className="px-10 py-3 rounded-full border border-[#b59f91] bg-gradient-to-b from-[#b9a598] via-[#9d887b] to-[#0f0d0c] text-primary-cream text-2xl md:text-3xl font-hk-modular tracking-widest">
+          <div className="px-10 py-3 rounded-full border border-[#b59f91] bg-gradient-to-b from-[#b9a598] via-[#9d887b] to-[#0f0d0c] text-primary-cream text-2xl md:text-3xl font-dm-sans\ tracking-widest">
             FREQUENTLY ASKED QUESTIONS
           </div>
         </div>
@@ -71,7 +71,7 @@ function Section2() {
               </div>
 
               <div className="flex-1 rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg overflow-hidden">
-                <h3 className="font-hk-modular text-lg text-primary-white mb-3">
+                <h3 className="font-dm-sans text-lg text-primary-white mb-3">
                   {faqs[0].title}
                 </h3>
                 <p className="font-dm-sans text-sm text-primary-white/90 leading-relaxed">
@@ -87,7 +87,7 @@ function Section2() {
                   <div className="relative z-10 h-14 w-14 rounded-full bg-[#f7e8cf] border-2 border-[#a47945]" />
                 </div>
                 <div className="flex-1 rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg">
-                  <h3 className="font-hk-modular text-lg text-primary-white mb-3">
+                  <h3 className="font-dm-sans text-lg text-primary-white mb-3">
                     {faqs[1].title}
                   </h3>
                   <p className="font-dm-sans text-sm text-primary-white/90 leading-relaxed">
@@ -142,7 +142,7 @@ function Section2() {
 
           <div className="mt-8 grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 items-center">
             <div className="rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg">
-              <h3 className="font-hk-modular text-lg text-primary-white mb-3">
+              <h3 className="font-dm-sans text-lg text-primary-white mb-3">
                 {faqs[2].title}
               </h3>
               <p className="font-dm-sans text-sm text-primary-white/90 leading-relaxed">
@@ -161,7 +161,7 @@ function Section2() {
             </div>
 
             <div className="rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg">
-              <h3 className="font-hk-modular text-lg text-primary-white mb-3">
+              <h3 className="font-dm-sans text-lg text-primary-white mb-3">
                 {faqs[3].title}
               </h3>
               <p className="font-dm-sans text-sm text-primary-white/90 leading-relaxed">
@@ -180,7 +180,7 @@ function Section2() {
             </div>
 
             <div className="rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg">
-              <h3 className="font-hk-modular text-lg text-primary-white mb-3">
+              <h3 className="font-dm-sans text-lg text-primary-white mb-3">
                 {faqs[4].title}
               </h3>
               <p className="font-dm-sans text-sm text-primary-white/90 leading-relaxed">
@@ -189,7 +189,7 @@ function Section2() {
             </div>
                 
             <div className="rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg">
-              <h3 className="font-hk-modular text-lg text-primary-white mb-3">
+              <h3 className="font-dm-sans text-lg text-primary-white mb-3">
                 {faqs[5].title}
               </h3>
               <p className="font-dm-sans text-sm text-primary-white/90 leading-relaxed">
@@ -204,7 +204,7 @@ function Section2() {
           className="-mt-px w-full h-[220px] md:h-[280px] lg:h-[320px] rounded-b-[28px] rounded-t-none border border-[#bba79a] border-t-0 shadow-[0_18px_40px_rgba(0,0,0,0.35)] bg-center bg-no-repeat bg-[length:100%_auto] bg-cover flex justify-center items-center"
         >
           <div className="rounded-3xl border border-[#b59f91] bg-gradient-to-b from-[#b9a598] via-[#9d887b] to-[#0f0d0c] px-6 py-4 text-primary-cream shadow-[0_18px_40px_rgba(0,0,0,0.35)]">
-            <p className="text-center font-hk-modular text-lg md:text-xl tracking-widest">
+            <p className="text-center font-dm-sans text-lg md:text-xl tracking-widest">
               COUNTDOWN TO APRIL 11, 2026
             </p>
             <div className="mt-3 flex items-center justify-center gap-4 text-center font-dm-sans text-sm md:text-base">
