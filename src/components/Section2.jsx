@@ -9,6 +9,8 @@ function Section2() {
     interval: 20,
   })
 
+  const sliderPositions = ['12%', '62%', '28%', '44%', '20%']
+
   const faqs = [
     {
       title: 'Who can attend?',
@@ -47,10 +49,10 @@ function Section2() {
 
         <div className="bg-gradient-to-b from-[#b9a598] via-[#9d887b] to-[#0f0d0c] rounded-t-[28px] rounded-b-none p-8 md:p-10 shadow-[0_18px_40px_rgba(0,0,0,0.35)] border border-[#bba79a] border-b-0">
           <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-8">
-            <div className="space-y-6">
-              <div className="rounded-2xl bg-[#a58f81] border border-[#ccb9ad] p-6 shadow-inner">
-                <div className="space-y-6">
-                  {[0, 1, 2].map((row) => (
+            <div className="flex flex-col md:flex-row items-start md:items-stretch gap-8">
+              <div className="md:w-5/12 lg:max-w-[360px] flex">
+                <div className="flex-1 flex flex-col justify-between space-y-6">
+                  {[0, 1, 2, 3, 4].map((row) => (
                     <div key={row} className="relative">
                       <div
                         className="h-3 rounded-full border border-[#c7a77c] bg-[#d4a66d]"
@@ -60,20 +62,15 @@ function Section2() {
                         }}
                       />
                       <div
-                        className={`absolute -top-2 h-7 w-4 rounded-sm border border-[#f7e8cf] bg-[#f5d9aa] shadow-[0_3px_0_rgba(0,0,0,0.2)] ${
-                          row === 0
-                            ? 'left-10'
-                            : row === 1
-                              ? 'left-32'
-                              : 'left-16'
-                        }`}
+                        className="absolute -top-2 h-7 w-4 rounded-sm border border-[#f7e8cf] bg-[#f5d9aa] shadow-[0_3px_0_rgba(0,0,0,0.2)]"
+                        style={{ left: sliderPositions[row] }}
                       />
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg">
+              <div className="flex-1 rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg overflow-hidden">
                 <h3 className="font-hk-modular text-lg text-primary-white mb-3">
                   {faqs[0].title}
                 </h3>
@@ -85,6 +82,10 @@ function Section2() {
 
             <div className="space-y-6">
               <div className="flex items-start gap-6">
+                <div className="relative w-16 h-40 rounded-full bg-[#caa678] border-2 border-[#a47945] flex items-center justify-center">
+                  <div className="absolute inset-2 rounded-full bg-[#e6c79c]" />
+                  <div className="relative z-10 h-14 w-14 rounded-full bg-[#f7e8cf] border-2 border-[#a47945]" />
+                </div>
                 <div className="flex-1 rounded-2xl bg-[#b9a598] border border-[#dccbc0] p-6 shadow-lg">
                   <h3 className="font-hk-modular text-lg text-primary-white mb-3">
                     {faqs[1].title}
@@ -94,20 +95,36 @@ function Section2() {
                   </p>
                 </div>
 
-                <div className="relative w-16 h-40 rounded-full bg-[#caa678] border-2 border-[#a47945] flex items-center justify-center">
-                  <div className="absolute inset-2 rounded-full bg-[#e6c79c]" />
-                  <div className="relative z-10 h-14 w-14 rounded-full bg-[#f7e8cf] border-2 border-[#a47945]" />
-                </div>
               </div>
 
-              <div className="flex items-center gap-4">
-                {[0, 1, 2].map((index) => (
+              <div className="flex justify-evenly items-center gap-4">
+                {[0, 1, 2, 3].map((index) => (
                   <div
                     key={index}
                     className="h-10 w-10 rounded-full bg-[#f1ddc2] border border-[#a47945] flex items-center justify-center"
                   >
                     <div
                       className="h-4 w-0.5 bg-[#a47945]"
+                      style={{
+                        transform:
+                          index === 0
+                            ? 'rotate(-20deg)'
+                            : index === 1
+                              ? 'rotate(15deg)'
+                              : 'rotate(35deg)',
+                      }}
+                    />
+                  </div>
+                ))}
+              </div>
+              <div className="flex justify-between items-center gap-4">
+                {[0, 1, 2,3,4,5].map((index) => (
+                  <div
+                    key={index}
+                    className="h-10 w-10 rounded-full bg-[#f1ddc2] border border-[#a47945] flex items-center justify-center"
+                  >
+                    <div
+                      className="h-4 w-0.5 bg-[#a47945] "
                       style={{
                         transform:
                           index === 0
