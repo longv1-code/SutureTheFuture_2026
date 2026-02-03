@@ -114,8 +114,8 @@ function LaunchSection() {
             <div className="bg-black/30 backdrop-blur-[1px] rounded-3xl px-5 sm:px-8 py-8 sm:py-10 border border-white/20">
               <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-12">
                 <div className="space-y-6">
-                  <h2 className="text-3xl md:text-4xl font-hk-modular text-primary-cream font-bold">
-                    What is Suture the Future?
+                  <h2 className="text-3xl md:text-4xl font-robot-dreamer text-primary-cream font-bold">
+                    WHAT IS SUTURE THE FUTURE?
                   </h2>
                   <p className="text-sm md:text-base font-dm-sans text-primary-white leading-relaxed font-bold">
                     Suture the Future is a one-day interstellar innovation
@@ -137,7 +137,7 @@ function LaunchSection() {
                 </div>
 
                 <div className="space-y-6">
-                  <h2 className="text-3xl md:text-4xl font-hk-modular text-primary-cream font-bold">
+                  <h2 className="text-3xl md:text-4xl font-robot-dreamer text-primary-cream font-bold">
                     EVENT INFORMATION
                   </h2>
                   <div className="space-y-6">
@@ -175,7 +175,7 @@ function LaunchSection() {
 
               <div className="mt-8 bg-primary-cream/30 rounded-3xl px-6 py-4 backdrop-blur-sm">
                 <p className="text-xs md:text-sm font-dm-sans text-primary-white font-bold text-center [text-shadow:0_2px_6px_rgba(0,0,0,0.4)]">
-                  <span className="font-hk-modular">Note:</span> The event is open
+                  <span className="font-dm-sans">Note:</span> The event is open
                   and free to all participants; however, GSSA members receive
                   priority during the application period. Membership is
                   available through the GSSA website by paying annual or semester

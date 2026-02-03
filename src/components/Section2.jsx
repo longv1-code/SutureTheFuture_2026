@@ -17,7 +17,7 @@ function Section2() {
     },
     {
       title: 'When is the deadline to apply for Suture the Future?',
-      text: 'GSSA members have priority registration until February 1st at 11:59 PM. Non-GSSA members may begin applying on February 2nd, and applications will close on April 1st at 11:59 PM. Admissions are rolling and capacity is limited, so early applications are strongly encouraged.',
+      text: 'GSSA members have priority registration until February 10th at 11:59 PM. Non-GSSA members may begin applying on February 11th, and applications will close on April 1st at 11:59 PM. Admissions are rolling and capacity is limited so early applications are strongly encouraged.',
     },
     {
       title: 'How do teams work?',
@@ -38,12 +38,12 @@ function Section2() {
       <div className="w-full max-w-6xl mx-auto">
         <div className="flex justify-center mb-10 ">
           <div
-            className="w-full px-4 sm:px-10 py-3 rounded-full border border-[#b59f91] text-primary-cream text-lg sm:text-2xl md:text-3xl font-hk-modular tracking-widest text-center"
+            className="w-full px-4 sm:px-10 py-3 rounded-full border border-[#b59f91] text-primary-cream text-lg sm:text-2xl md:text-3xl font-robot-dreamer tracking-widest text-center"
             style={{ backgroundImage: 'linear-gradient(to bottom, #b9a598, #9d887b, #0f0d0c)' }}
           >
             FREQUENTLY ASKED QUESTIONS
           </div>
-          {/* <div className="w-full px-10 py-3 rounded-full border border-[#b59f91] bg-gradient-to-r from-[#b9a598] via-[#9d887b] to-[#0f0d0c] text-primary-cream text-2xl md:text-3xl font-hk-modular tracking-widest text-center">
+          {/* <div className="w-full px-10 py-3 rounded-full border border-[#b59f91] bg-gradient-to-r from-[#b9a598] via-[#9d887b] to-[#0f0d0c] text-primary-cream text-2xl md:text-3xl font-dm-sans tracking-widest text-center">
             FREQUENTLY ASKED QUESTIONS
           </div> */}
         </div>

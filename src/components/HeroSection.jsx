@@ -1,6 +1,7 @@
 import HeroVideo from '../assets/videos/HeroVideo.mp4'
 import { useRef, useEffect, useState } from 'react'
 import { useTimer } from 'react-timer-hook'
+import { ExternalLink } from 'lucide-react'
 
 function HeroSection() {
   const [titleWidth, setTitleWidth] = useState(0)
@@ -68,11 +69,20 @@ function HeroSection() {
           {/* Mission Status Box */}
           <div className="bg-primary-cream bg-opacity-40 rounded-3xl px-4 sm:px-6 py-4 backdrop-blur-sm">
             <p className="text-xs sm:text-sm md:text-base font-dm-sans text-primary-white font-bold text-center [text-shadow:0_2px_6px_rgba(0,0,0,0.4)]">
-              Mission Status: GSSA Member Applications Open January 20
+              Mission Status:{' '}
+              <a
+                className="inline-flex items-center gap-1 underline underline-offset-2 transition-all duration-200 hover:opacity-80"
+                href="https://forms.gle/e9QqxYDyZiAR3jBaA"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Currently Accepting GSSA Member Applications
+                <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
+              </a>
             </p>
           </div>
           <div className="rounded-3xl mt-8 md:mt-10 border border-[#b59f91] bg-gradient-to-b from-[#b9a598] via-[#9d887b] to-[#0f0d0c] px-4 sm:px-6 py-4 text-primary-cream shadow-[0_18px_40px_rgba(0,0,0,0.35)]">
-            <p className="text-center font-hk-modular text-sm sm:text-base md:text-xl tracking-widest">
+            <p className="text-center font-dm-sans text-sm sm:text-base md:text-xl tracking-widest">
               COUNTDOWN TO APRIL 11, 2026
             </p>
             <div className="mt-3 flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-center font-dm-sans text-xs sm:text-sm md:text-base">
