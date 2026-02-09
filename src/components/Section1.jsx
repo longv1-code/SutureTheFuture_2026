@@ -39,10 +39,10 @@ function Section1() {
                   Location
                 </u>
                 <p className="text-base font-dm-sans text-primary-white font-bold">
-                  MSC 2406A
+                  ILCB 229
                 </p>
                 <p className="text-base font-dm-sans text-primary-white font-bold">
-                  730 Olsen Blvd, College Station, TX 77845
+                  215 Lamar St, College Station, TX 77844
                 </p>
               </div>
 
