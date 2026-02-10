@@ -146,10 +146,10 @@ function LaunchSection() {
                         Location
                       </u>
                       <p className="text-sm md:text-base font-dm-sans text-primary-white font-bold">
-                        ILCB*
+                        ILCB 229
                       </p>
                       <p className="text-sm md:text-base font-dm-sans text-primary-white font-bold">
-                        *Room TBD based on number of participants
+                        215 Lamar St, College Station, TX 77844
                       </p>
                     </div>
 
